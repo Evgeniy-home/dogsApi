@@ -1,19 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Dog from "./Dog";
+//import DogButton from './DogButton';
+import "./DogGallery.css";
 
-const DogGallery = (props) => {
+
+class DogGallery extends Component {
+    constructor(props) {
+        super(props);
+        this.state={
+          dogsArray: props.children.map((dogURL) => 
+          <Dog url={dogURL}/>
+          )
+        };
+    }
 
 
-    const dogsArray = props.dogs.map((dogURL) => {
-        return <Dog url={dogURL} />
-    })
-
+    render() {
     return(
         <div className="container">
-                {dogsArray}
-
+            {this.state.dogsArray}
+                
         </div>
     )
+    }
 }
 
 export default DogGallery;

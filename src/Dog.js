@@ -3,7 +3,8 @@ import React from "react"
 const Dog =(props) => {
     return(
         <div className="child">
-            <img src={props.URL}/>
+        
+            <img style={{height:250, weidht:300}}  src={props.url} alt=""/>
 
         </div>
     )
