@@ -2,8 +2,8 @@
 import { Component } from 'react';
 import './App.css';
 import DogGallery from "./DogGallery"
-import DogButton from "./DogButton"
-//import Button from "./Button"
+import DogButton2 from "./DogButton2"
+
 
 
 class App extends Component{
@@ -29,12 +29,11 @@ class App extends Component{
         <h1 style={{textAlign: 'center'}}>
           Dog Gallery
         </h1>
-        <DogButton></DogButton>
+        <DogButton2></DogButton2>
         <DogGallery>{this.state.dogs}</DogGallery>
       </div>
     );
   }
 }
  
-
-  export default App;
+export default App;

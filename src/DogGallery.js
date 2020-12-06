@@ -18,8 +18,7 @@ class DogGallery extends Component {
     render() {
     return(
         <div className="container">
-            {this.state.dogsArray}
-                
+            {this.state.dogsArray}        
         </div>
     )
     }
