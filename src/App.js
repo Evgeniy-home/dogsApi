@@ -1,8 +1,9 @@
 
 import { Component } from 'react';
 import './App.css';
-import React from 'react'
 import DogGallery from "./DogGallery"
+import DogButton from "./DogButton"
+//import Button from "./Button"
 
 
 class App extends Component{
@@ -15,7 +16,7 @@ class App extends Component{
   }
 
   componentDidMount () {
-    fetch("https://dog.ceo/api/breeds/image/random/9")
+    fetch("https://dog.ceo/api/breeds/image/random/10")
     .then((res) => res.json())
     .then((data) => {
       this.setState({dogs: data.message})
@@ -28,7 +29,8 @@ class App extends Component{
         <h1 style={{textAlign: 'center'}}>
           Dog Gallery
         </h1>
-        <DogGallery>dogs={this.state.dogs}</DogGallery>
+        <DogButton></DogButton>
+        <DogGallery>{this.state.dogs}</DogGallery>
       </div>
     );
   }
