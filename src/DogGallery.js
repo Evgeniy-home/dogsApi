@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Dog from "./Dog";
-//import DogButton from './DogButton';
+import DogButton2 from './DogButton2';
 import "./DogGallery.css";
 
 
@@ -18,6 +18,7 @@ class DogGallery extends Component {
     render() {
     return(
         <div className="container">
+            <DogButton2></DogButton2>
             {this.state.dogsArray}        
         </div>
     )

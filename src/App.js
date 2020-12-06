@@ -29,7 +29,7 @@ class App extends Component{
         <h1 style={{textAlign: 'center'}}>
           Dog Gallery
         </h1>
-        <DogButton2></DogButton2>
+        {/* <DogButton2></DogButton2> */}
         <DogGallery>{this.state.dogs}</DogGallery>
       </div>
     );

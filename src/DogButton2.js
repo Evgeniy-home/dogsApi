@@ -1,5 +1,6 @@
 import react, { Component } from "react"
 import React from 'react';
+import "./DogGallery.css"
 
 class DogButton2 extends React.Component {
   constructor(){
@@ -24,7 +25,7 @@ class DogButton2 extends React.Component {
     
     return(
       <div>
-        <div id="img">
+        <div className="img">
           <img alt="dog" src={imgDOG} />
         </div>
         <button onClick={this.getRandomImage}>random Dog</button>
