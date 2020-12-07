@@ -16,7 +16,6 @@ class DogGallery extends Component {
     }
           
     render() {
-        
     return(
         <div className="container">
         <DogButton2></DogButton2>
