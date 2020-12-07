@@ -4,7 +4,7 @@ const Dog =(props) => {
     return(
         <div className="child">
         
-            <img style={{height:250, weidht:300}}  src={props.url} alt="dog"/>
+            <img style={{height:250, weidht:300}} src={props.url} alt=""/>
 
         </div>
     )

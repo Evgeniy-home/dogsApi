@@ -1,4 +1,3 @@
-import react, { Component } from "react"
 import React from 'react';
 import "./DogGallery.css"
 
@@ -25,10 +24,12 @@ class DogButton2 extends React.Component {
     
     return(
       <div>
-        <div className="img">
-          <img alt="dog" src={imgDOG} />
+          <button style={{height:30, widht:10}} onClick={this.getRandomImage}>Загрузить картинку</button>
+          <button style={{height:30, widht:10}} onClick={this.getRandomImage}>Перемешать</button>
+        <div>
+          <img style={{height:250, weidht:300}} alt="" src={imgDOG} />
         </div>
-        <button onClick={this.getRandomImage}>random Dog</button>
+        
       </div>
     )
   }
